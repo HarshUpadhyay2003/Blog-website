@@ -1,0 +1,19 @@
+Lighter and Brighter Teals:
+
+Aquamarine (#7FFFD4): This evokes a refreshing, tropical feel.
+Light Sea Green (#28B4C6): Offers a vibrant, ocean-like quality.
+Turquoise (#40E0D0): A classic, cheerful teal with a touch of blue.
+Pale Teal (#AFEEEE): Creates a soft, airy atmosphere.
+Darker and Muted Teals:
+
+Dark Teal (#008080): A sophisticated and calming shade.
+Navy Teal (#003366): Deep and luxurious, with a touch of blue.
+Cadet Blue (#5F9EA0): A muted grayed-down teal with a hint of green.
+Dusty Teal (#96A8A1): A smoky, sophisticated shade.
+
+/* CSS HEX */
+--sgbus-green: #87D758ff;
+--celadon: #AAE9CCff;
+--light-green: #A9E879ff;
+--celadon-2: #8CD5B3ff;
+--nyanza: #E0F7DAff;
