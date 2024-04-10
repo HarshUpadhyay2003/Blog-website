@@ -11,7 +11,7 @@ import session from 'express-session';
 const app = express();
 env.config();
 app.use(cors({
-  origin:process.env.ORIGIN,
+  origin:'*',
   methods:["POST","GET"],
   credentials:true
 }));
