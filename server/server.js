@@ -22,7 +22,7 @@ app.use(session({
     maxAge:1000*60*60
   }
 }));
-const port = process.env.PORT | 5000;
+const port = process.env.PORT | 3000;
 const saltRounds = 5;
 
 
