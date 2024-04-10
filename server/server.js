@@ -38,6 +38,7 @@ const db = new pg.Client({
 db.connect();
 
 app.get('/', async(req, res)=>{
+  res.send("hello")
 })
 
 
