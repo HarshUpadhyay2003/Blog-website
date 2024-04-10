@@ -10,11 +10,7 @@ import session from 'express-session';
 
 const app = express();
 env.config();
-app.use(cors({
-  origin:'*',
-  methods:["POST","GET"],
-  credentials:true
-}));
+app.use(cors());
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(session({
