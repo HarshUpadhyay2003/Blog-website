@@ -13,20 +13,20 @@ export default function Login(){
       const {name, value} = event.target;
       setData({...formData, [name]:value});
     }
-    axios.defaults.withCredentials=true;
     async function handleSubmit(){
       const res = await axios.post(import.meta.env.VITE_url + "login", formData)
-      const status = res.data.status;
+      const status = res.status;
       const user = res.data.user;
+      console.log(res)
       localStorage.setItem("status",status)
       localStorage.setItem("username",user);
       if (status ==200){
         navigate("/Home")
-      }else if(status === "unsuccessful"){
+      }else if(res.data.status === "unsuccessful"){
         window.alert("Wrong Credentiatls. Try Again.")
         window.location.reload();
       }else{
-        window.alert(status);
+        window.alert(res.data.status);
         navigate('/Register')
       }
       

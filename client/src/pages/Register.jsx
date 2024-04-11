@@ -15,7 +15,6 @@ export default function Register() {
     const { name, value } = event.target;
     setData({ ...formData, [name]: value });
   }
-  axios.defaults.withCredentials = true;
   async function handleSubmit() {
     const res = await axios.post(import.meta.env.VITE_url + "register", formData);
     if (res.data.status == 'exist'){

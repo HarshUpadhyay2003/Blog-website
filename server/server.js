@@ -87,7 +87,7 @@ app.post('/login', async(req,res)=>{
       }
     })
   }else{
-    res.send({status:"User doesn't exists. Please Register."});
+    res.status(201).send({status:"User doesn't exists. Please Register."});
   }
 }catch(err){
   console.log(err)
