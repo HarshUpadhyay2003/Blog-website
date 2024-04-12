@@ -22,7 +22,7 @@ app.use(session({
     maxAge:1000*60*60
   }
 }));
-const port = process.env.PORT || 3000;
+const port = process.env.port || 3000;
 const saltRounds = 5;
 
 
@@ -90,7 +90,7 @@ app.post('/login', async(req,res)=>{
     res.status(201).send({status:"User doesn't exists. Please Register."});
   }
 }catch(err){
-  console.log(err)
+  console.log("Error : ",err)
 }})
 
 
@@ -125,5 +125,5 @@ app.post('/del',async(req,res)=>{
 
 
 app.listen(port, () => {
-    console.log(`Server started on port ${port}`);
-})
+  console.log(`Express started on port ${port}\nhttp://localhost:${port}`,);
+});
